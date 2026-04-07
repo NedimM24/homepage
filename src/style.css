@@ -6,19 +6,7 @@
     --secondary-font: "Montserrat", sans-serif;
 
     /*Colors*/
-    --primary-color: lime;
+    --primary-color: #57467B;
+    --secondary-color: white;
 }
 
-body{
-    background-color: aquamarine;
-}
-
-h1,
-h2 {
-    font-size: xx-large;
-    font-family: var(--primary-font);
-}
-
-p{
-    font-size: xx-large;
-}
