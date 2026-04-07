@@ -1,5 +1,52 @@
 /* style.css*/
 
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+body {
+  /* 4. Increase line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
 :root{
     /* Font styles*/
     --primary-font: "Playfair Display", serif;
@@ -10,10 +57,63 @@
     --secondary-color: white;
 }
 
-body{
+body {
+    overflow-x: hidden;
+}
+
+.name{
+  margin-top: .5rem;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9)
+}
+
+.h-background{
+    position: relative;
+    height: 20rem;
+}
+
+.h-background::before{
+    content: "";
+    position: absolute;
     background-color: var(--primary-color);
-   
-    
+    width: 150%;
+    height: 150%;
+    top: -20%;
+    left: -35%;
+    transform: rotate(-20deg);
+    box-shadow: 10px 10px 5px grey;
+    z-index: -1;
+}
+
+h1,
+h2 {
+    font-family: var(--primary-font);
+}
+
+h2{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4)
+}
+
+p{
+    font-family: var(--secondary-font);
+}
+
+.h-photo{
+    height: 25rem;
+    margin: 1rem;
+}
+
+.h-photo img{
+  height: 100%;
+  width: 100%;
+}
+
+.about-me{
+  margin: 2rem;
+}
+
+.center-it{
+    text-align: center;
 }
 
 .ghub-icon,
@@ -21,6 +121,7 @@ body{
 .phone-icon,
 .email-icon,
 .expand-icon{
+    
     width: 1rem;
     height: auto;
 }
