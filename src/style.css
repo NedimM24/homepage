@@ -6,12 +6,14 @@
     --secondary-font: "Montserrat", sans-serif;
 
     /*Colors*/
-    --primary-color: #CAFE48;
+    --primary-color: #989FCE;
     --secondary-color: white;
 }
 
 body{
     background-color: var(--primary-color);
+   
+    
 }
 
 .ghub-icon,
