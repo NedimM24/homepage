@@ -6,7 +6,19 @@
     --secondary-font: "Montserrat", sans-serif;
 
     /*Colors*/
-    --primary-color: #57467B;
+    --primary-color: #CAFE48;
     --secondary-color: white;
 }
 
+body{
+    background-color: var(--primary-color);
+}
+
+.ghub-icon,
+.linked-icon,
+.phone-icon,
+.email-icon,
+.expand-icon{
+    width: 1rem;
+    height: auto;
+}
