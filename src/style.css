@@ -57,6 +57,8 @@ h1, h2, h3, h4, h5, h6 {
     --secondary-color: white;
 }
 
+
+
 body {
     overflow-x: hidden;
 }
@@ -138,22 +140,39 @@ p{
   justify-self: center;
   box-shadow: 0 0 10px 5px grey;
   width: 90%;
-  height: 22rem;
+  height: auto;
 }
 
 .pb-top.box-two {
   background-color: #989FCE;
 }
 
-.pb-top{
+.pb-top.box-three {
+  background-color: #F26419;
+}
 
+.pb-top.box-four {
+  background-color: #2F4858;
+}
+
+.pb-top.box-five {
+  background-color: #63A375;
+}
+
+.pb-top.box-six {
+  background-color: #D57A66;
+}
+
+.pb-top{
+  display: flex;
+  align-items: center;
   color: white;
   font-family: var(--primary-font);
   
   font-size: xx-large;
-  padding: 3.2rem;
+  padding: 2.5rem;
   background-color: #33658A;
-  height: 65%;
+  min-height: 240px;
 }
 
 .pbb-top{
@@ -186,4 +205,23 @@ p{
    
     width: 1rem;
     height: auto;
+}
+
+.ghub-icon:hover,
+.linked-icon:hover,
+.phone-icon:hover,
+.email-icon:hover,
+.expand-icon:hover{
+   
+    transform: scale(1.1);
+}
+
+.ghub-icon:active,
+.linked-icon:active,
+.phone-icon:active,
+.email-icon:active,
+.expand-icon:active{
+   
+    transform: scale(1);
+
 }
