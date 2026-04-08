@@ -69,7 +69,8 @@ body {
 
 .h-background{
     position: relative;
-    height: 20rem;
+    height: auto;
+   
 }
 
 .h-background::before{
@@ -78,9 +79,9 @@ body {
     background-color: var(--primary-color);
     width: 150%;
     height: 150%;
-    top: -27%;
+    top: -67%;
     left: -35%;
-    transform: rotate(-20deg);
+    transform: rotate(55deg);
     box-shadow: 10px 10px 5px grey;
     z-index: -1;
 }
@@ -121,6 +122,10 @@ p{
   justify-self: center;
   gap: .4rem;
   margin-top: .2rem;
+}
+
+.mid-section{
+  
 }
 
 .ghub-icon,
