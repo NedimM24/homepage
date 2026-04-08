@@ -78,7 +78,7 @@ body {
     background-color: var(--primary-color);
     width: 150%;
     height: 150%;
-    top: -20%;
+    top: -27%;
     left: -35%;
     transform: rotate(-20deg);
     box-shadow: 10px 10px 5px grey;
@@ -116,12 +116,19 @@ p{
     text-align: center;
 }
 
+.about-logos{
+  display: flex;
+  justify-self: center;
+  gap: .4rem;
+  margin-top: .2rem;
+}
+
 .ghub-icon,
 .linked-icon,
 .phone-icon,
 .email-icon,
 .expand-icon{
-    
+   
     width: 1rem;
     height: auto;
 }
