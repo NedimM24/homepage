@@ -125,7 +125,57 @@ p{
 }
 
 .mid-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.project-box{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  box-shadow: 0 0 10px 5px grey;
+  width: 90%;
+  height: 22rem;
+}
+
+.pb-top.box-two {
+  background-color: #989FCE;
+}
+
+.pb-top{
+
+  color: white;
+  font-family: var(--primary-font);
   
+  font-size: xx-large;
+  padding: 3.2rem;
+  background-color: #33658A;
+  height: 65%;
+}
+
+.pbb-top{
+  justify-self: center;
+  padding: 1.2rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.project-name{
+  font-weight: bolder;
+}
+
+.work-logos{
+  display: flex;
+  gap: .5rem;
+}
+
+.work-description{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .ghub-icon,
