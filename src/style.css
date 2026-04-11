@@ -102,8 +102,8 @@ p{
 }
 
 .h-photo{
-    height: 27rem;
-    margin: 2rem 1rem 1rem;
+    height: auto;
+    margin: 1rem 1rem 1rem;
 }
 
 .h-photo img{
@@ -201,6 +201,27 @@ p{
   height: auto;
   background-color: var(--primary-color);
   margin-top: 6rem;
+  box-shadow: 0px -5px 5px grey;
+  color: var(--secondary-color);
+
+  padding-top: 3rem;
+}
+
+.f-header{
+  
+  font-family: var(--primary-font);
+}
+
+.f-para,
+.f-addresses,
+.f-contact-info{
+  padding: 1rem;
+}
+
+.f-image{
+  padding-top: 3rem;
+  width: 100%;
+  height: auto;
 }
 
 .ghub-icon,
