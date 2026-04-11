@@ -131,7 +131,15 @@ p{
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  margin-top: 3rem;
+  margin-top: 1rem;
+}
+
+.my-work{
+  margin-top: 4rem;
+}
+
+.my-title{
+  text-align: center;
 }
 
 .project-box{
@@ -251,4 +259,64 @@ p{
    
     transform: scale(1);
 
+}
+
+/*Tablet Media*/
+@media (min-width: 768px){
+
+  .h-background{
+    position: relative;
+    height: auto;
+   
+}
+
+.h-background::before{
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    width: 380%;
+    height: 150%;
+    top: -137%;
+    left: -60%;
+    transform: rotate(-20deg);
+    box-shadow: 10px 10px 5px grey;
+    z-index: -1;
+}
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .header{
+    justify-items: center;
+  }
+  
+  .h-photo{
+    position: relative;
+    margin-left: 3rem;
+   
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+    float: left;
+  }
+  .about-me{
+    transform: translateY(2rem);
+    width: 80%;
+    padding: 4rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px 5px grey;
+  }
+
+  .mid-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .my-title{
+    margin-top: 3rem;
+  }
+
+  
 }
