@@ -197,6 +197,12 @@ p{
   margin-bottom: 1rem;
 }
 
+.footer{
+  height: auto;
+  background-color: var(--primary-color);
+  margin-top: 6rem;
+}
+
 .ghub-icon,
 .linked-icon,
 .phone-icon,
