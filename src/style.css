@@ -297,26 +297,67 @@ p{
     margin-left: 3rem;
    
     height: 100%;
-    width: 30%;
+    width: 30vw;
     z-index: 1;
     float: left;
   }
   .about-me{
     transform: translateY(2rem);
-    width: 80%;
+    width: 80vw;
     padding: 4rem;
     background-color: var(--secondary-color);
     box-shadow: 0 0 10px 5px grey;
   }
 
   .mid-section{
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   .my-title{
-    margin-top: 3rem;
+    margin-top: 7rem;
+    
   }
 
+.footer{
+  display: flex;
+  padding: 2rem;
+  font-size: x-large;
+  gap: 1rem;
+}
+
+.f-header{
+  margin-top: 5rem;
+  padding: 1rem;
+}
+
+.about-logos {
+  align-self: center;
+}
+
+.ghub-icon,
+.linked-icon,
+.phone-icon,
+.email-icon,
+.expand-icon{
+    width: 2.5rem;
+    height: auto;
+}
+
+.f-image{
+  margin-top: 5rem;
+  width: 35vw;
+  height: auto;
+  flex-shrink: 0;
+}
+
+
+.f-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
   
 }
