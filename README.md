@@ -1,45 +1,39 @@
-# Webpack-ESLint-Prettier-Template
+# Responsive Homepage Project
 
-- ESLint
-My ESLint is not configured for react or vue.js
+## Overview
+This project is a responsive homepage built with HTML and CSS as part of a learning exercise focused on media queries and responsive layout design. The goal was to recreate a provided design across mobile, tablet, and desktop screen sizes while ensuring the layout adapts smoothly between 320px and 1920px.
 
-You can run ESLint on any file or directory like this:
-npx eslint yourfile.js 
+## Features
+- Fully responsive layout using media queries
+- Mobile-first structure adapted for tablet and desktop
+- Flexbox and CSS Grid used for layout design
+- Reusable project card components
+- Custom color scheme and typography
+- Hover effects for interactive icons
 
-Rules
-{
-		rules: {
-			"no-unused-vars": "warn",
-			"no-undef": "warn",
-		},
-	},
+## Technologies Used
+- HTML5
+- CSS3
+- Flexbox
+- CSS Grid
+- Media Queries
 
-  - Prettier
-First install locally
-npm install --save-dev --save-exact prettier
+## What I Learned
+- How to structure a responsive webpage from scratch
+- How to use media queries to adapt layouts across screen sizes
+- When to use Flexbox vs Grid for layout control
+- How to build reusable UI components using HTML and CSS
+- Improving visual hierarchy and spacing in a layout
 
-Next create an empty config file. Lets editor and other tools know that you're using Prettier. 
-node --eval "fs.writeFileSync('.prettierrc','{}\n')"
+## Notes
+This project was focused primarily on layout and responsiveness rather than complete content or production-ready polish. Placeholder images and text were used where needed.
 
-Next create .prettierignore file. Let's editors know what files not to format. 
-node --eval "fs.writeFileSync('.prettierignore','# Ignore artifacts:\nbuild\ncoverage\n')"
+## Future Improvements
+- Replace placeholder content with real portfolio projects
+- Improve accessibility (semantic HTML, alt text, ARIA labels)
+- Refactor class naming for better maintainability
+- Add subtle animations and transitions
+- Convert into a full personal portfolio site
 
-
-- Using Prettier
-const badCode="yuck! //Save
-
-npx prettier . --write
-const badCode = "yuck!"; //Prettier format
-
-
-
-If you have a CI setup, run the following as part of it to make sure that everyone runs Prettier. This avoids merge conflicts and other collaboration issues!
-
-npx prettier . --check
-
---check is like --write, but only checks that files are already formatted, rather than overwriting them. prettier --write and prettier --check are the most common ways to run Prettier.
-
-ESLint. (n.d.). Getting started. ESLint. Retrieved January 30, 2026, from https://eslint.org/docs/latest/use/getting-started
-
-Prettier. (n.d.). Installation. Prettier. Retrieved January 30, 2026, from https://prettier.io/docs/install.html
-
+## Author
+Nedim Mulahusic
