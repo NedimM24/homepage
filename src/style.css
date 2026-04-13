@@ -366,14 +366,18 @@ p{
 @media (min-width: 1024px) {
   .container {
     display: grid;
+    
   }
 
   .header {
     justify-items: center;
+    margin-top: 6rem;
+    margin-left: 3rem;
   }
 
   .h-photo {
     position: relative;
+    margin-top: 2rem;
     margin-left: 3rem;
     height: 100%;
     width: 30vw;
@@ -385,9 +389,50 @@ p{
     height: 23rem;
     width: 80vw;
     padding: 6rem;
+    margin-top: 5rem;
     
     font-size: large;
     background-color: var(--secondary-color);
     box-shadow: 0 0 10px 5px grey;
   }
+
+  .my-title{
+    margin-top: 12rem;
+  }
+
+  .mid-section{
+    margin-top: 2rem;
+    padding: 3rem;
+    gap: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .footer{
+    margin-top: 12rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    font-size: x-large;
+    gap: 1rem;
+}
+
+.f-image{
+  margin-top: 0rem;
+  width: 100%;
+  height: 80%;
+  flex-shrink: 0;
+}
+
+
+.f-left {
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 }
