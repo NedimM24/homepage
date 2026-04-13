@@ -361,3 +361,25 @@ p{
 }
   
 }
+
+/*Desktop Media*/
+
+@media (min-width: 1024px){
+  .container{
+    display: grid;
+  }
+
+  .header{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .h-photo{
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    grid-row-start: 2;
+  }
+}
+
