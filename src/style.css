@@ -362,24 +362,32 @@ p{
   
 }
 
-/*Desktop Media*/
-
-@media (min-width: 1024px){
-  .container{
+/* Desktop Media */
+@media (min-width: 1024px) {
+  .container {
     display: grid;
   }
 
-  .header{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  .header {
+    justify-items: center;
   }
 
-  .h-photo{
+  .h-photo {
+    position: relative;
+    margin-left: 3rem;
+    height: 100%;
+    width: 30vw;
+    z-index: 1;
+  }
 
-    grid-column-start: 1;
-    grid-column-end: 2;
-
-    grid-row-start: 2;
+  .about-me {
+    transform: translateY(8.2rem);
+    height: 23rem;
+    width: 80vw;
+    padding: 6rem;
+    
+    font-size: large;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px 5px grey;
   }
 }
-
